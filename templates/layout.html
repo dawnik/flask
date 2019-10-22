@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% if title %}
+        <title>Flask - {{ title }}</title>
+    {% else %}
+        <title>About Page</title>
+    {% endif %}
+
+</head>
+<body>
+    <h1>Abou Page</h1>
+    {% block content %}{% endblock %}
+
+</body>
+</html>
